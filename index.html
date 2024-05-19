@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A tik tac toe game as par t of CI projects.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/tieGame.png">
+
+    <title>TIK-TAK_TOE</title>
+
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<section>
+    <div class="title1">
+        <h2 class="logo">TIK-TAK_TOE</h2> 
+    </div>
+</section>
+
+<section>
+    <div class="box-rules">
+    <div class="rules">
+        <h2>Rules:</h2>
+        <p>Each player picks a symbol to represent them X's or O's <br> alternating turns each player picks one empty 
+            space and writes <br> their symbol in it the first player<br> to get three in a row horizontally.
+            <br>
+            You will have two bottoms Next is to keep playing.
+            Replay is to reset the game.</p>
+    </div>
+</div>
+</section>
+
+<section class="score">
+    <h2>Score</h2>
+  <div class="gameCount">
+    <p>You</p>
+    <p>Tie</p> 
+    <p>AI</p>
+  </div>
+
+  <div class="keepScore">
+  <div class="containScore" id="userScore"></div>
+  <div class="containScore" id="tieScore"></div>
+  <div class="containScore" id="computerScore"></div>
+  </div>
+</section>
+<table>
+    <tr>
+        <td class="cell" data-index="0" id="0"></td>
+        <td class="cell" id="1"></td>
+        <td class="cell" id="2"></td>
+    </tr>
+    <tr>
+        <td class="cell" id="3"></td>
+        <td class="cell" id="4"></td>
+        <td class="cell" id="5"></td>
+    </tr>
+    <tr>
+        <td class="cell" id="6"></td>
+        <td class="cell" id="7"></td>
+        <td class="cell" id="8"></td>
+    </tr>
+</table>
+ <div class="endgame">
+  <div class="text"></div>
+  <div class="final-result" style="display: none;"></div>
+  <button id="nextBtn">Next</button>
+  <button id="replayBtn">Replay</button>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
